@@ -1,0 +1,11 @@
+/**
+* 프로덕션용으로 빌드할 때 TypeScript 유형 검사에서 테스트 파일을 제외합니다.
+*/
+{
+  "extends": "./tsconfig",
+  "exclude": [
+    "./src/__tests__/**",
+    "./src/__mocks__/**",
+    "./src/test-utils"
+  ]
+}
